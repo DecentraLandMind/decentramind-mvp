@@ -2,7 +2,7 @@
 
 import subprocess
 import os
-from config import MODEL_DIR, MODEL_FILE, DOCKER_IMAGE, EXECUTABLE
+from app.config import MODEL_DIR, MODEL_FILE, DOCKER_IMAGE, EXECUTABLE
 
 def run_model(prompt: str) -> str:
     result = subprocess.run([
