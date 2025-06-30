@@ -126,4 +126,10 @@ Want to collaborate or invest?
 
 ---
 
+## Demo
+
+[📹 Screencast.webm](./client-dapp//public/Screencast.webm)
+
+---
+
 Made with ❤️ for the decentralized AI future.
