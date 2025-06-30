@@ -120,7 +120,7 @@ Open in browser: `http://localhost:3000`
 ## 📬 Contact
 
 Want to collaborate or invest?
-**Email:** `investors@decentramind.com`
+**Email:** `decentramind.info@gmail.com`
 **Telegram:** `https://t.me/ArmanPayandeh`
 **Site:** coming soon…
 
