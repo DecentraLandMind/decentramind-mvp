@@ -27,14 +27,15 @@ def decrypt_payload(encrypted_key: str, encrypted_payload: str, nonce: str) -> s
 
     cipher = AES.new(aes_key, AES.MODE_GCM, nonce=nonce_bytes)
     decrypted = cipher.decrypt_and_verify(ciphertext[:-16], ciphertext[-16:])
-
-    decrypted_text = decrypted.decode("utf-8")
-    log_message("decrypt", {
-            "encrypted_key": encrypted_key,
-            "encrypted_payload": encrypted_payload,
-            "nonce": nonce,
-            "decrypted_text": decrypted_text
-        })
+   
+    # log just for debug
+    # decrypted_text = decrypted.decode("utf-8")
+    # log_message("decrypt", {
+    #         "encrypted_key": encrypted_key,
+    #         "encrypted_payload": encrypted_payload,
+    #         "nonce": nonce,
+    #         "decrypted_text": decrypted_text
+    #     })
 
     return decrypted.decode("utf-8"), aes_key, nonce_bytes
 
@@ -49,7 +50,7 @@ def encrypt_response(response_text: str, key: bytes, nonce: bytes) -> str:
         "key": base64.b64encode(key).decode(),
         "nonce": base64.b64encode(nonce).decode()
     }
-
+    # log just for debug
     # log_message("encrypt", {
     #     "response_text": response_text,
     #     **encrypted_data
